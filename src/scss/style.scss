@@ -1,0 +1,109 @@
+@import "_normalaiz";
+@import "_fonts";
+@import"_global";
+
+header {
+    height: 100vh;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+        
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(54, 56, 56, 0.9);
+        font-family: "Montserrat-Bold";
+    }
+
+    .btn-menu {
+        border: none;
+        background-color: #fff;
+    }
+}
+
+    // slider
+
+.swiper-container {
+    background-image: url(../media/background_img/slider-bg.jpg);
+    padding-bottom: 70px;
+    
+
+    .swiper-pagination{
+        bottom: 0;
+    }
+  
+
+    
+    .swiper-pagination-bullet {
+        margin: 0px 13px !important;   
+        color:#363838;
+        position: relative;
+        bottom: 95px;
+        left: 110px;
+        width: 8px;
+        height: 8px;    
+    }   
+    .swiper-pagination-bullet-active {
+        background: #ffef35;
+    }
+  
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    .swiper-img {
+        position: relative;
+        bottom: 20px;
+        left: 23px;
+    }
+    img{
+        max-height: 740px;
+        }
+    
+
+    .slider-content {
+        position: relative;
+        bottom: 103px;
+        left: 13px;
+        max-width: 615px;
+        margin-left: 25px;
+    }
+        .slid-line {
+            width: 185px;
+            height: 1px;
+            background: black;
+            margin: 0 auto;
+            }
+                
+        .slaider-title {
+            color: #363838;
+            font-family: "Montserrat-Bold";
+            font-weight: 600;
+            font-size: 100px;
+            line-height: 1.2;
+            padding-bottom: 35px;
+            margin-bottom: 20px;
+            }       
+        .slider-text{
+            max-width: 550px;
+        }           
+}
