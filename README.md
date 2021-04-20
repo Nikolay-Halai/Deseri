@@ -1,1 +1,1 @@
-deseri/dist
+deseri/dist/index.html
