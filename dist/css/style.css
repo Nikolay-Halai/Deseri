@@ -399,7 +399,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1170px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -408,8 +408,8 @@ body {
           box-sizing: border-box;
 }
 
-header {
-  height: 100vh;
+li {
+  list-style-type: none;
 }
 
 .nav-wrapper {
@@ -425,6 +425,13 @@ header {
   height: 120px;
 }
 
+.nav-wrapper .menu-logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .nav-wrapper nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +439,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-left: 35px;
+  margin-right: 60px;
 }
 
 .nav-wrapper .menu {
@@ -441,12 +454,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style-type: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 20px;
-  width: 100%;
+}
+
+.nav-wrapper .menu-item-center {
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 .nav-wrapper a {
@@ -458,34 +470,29 @@ header {
 .nav-wrapper .btn-menu {
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 
-.no-webp .swiper-container {
-  background-image: url(../media/background_img/slider-bg.jpg); }
+.no-webp .slider-heder {
+  background-image: url("../media/background_img/slider-bg.jpg"); }
 
-.swiper-container {
-  padding-bottom: 70px;
+.slider-heder {
+  max-height: 710px;
+  margin-bottom: 225px;
 }
 
-.swiper-container .swiper-pagination {
-  bottom: 0;
-}
-
-.swiper-container .swiper-pagination-bullet {
-  margin: 0px 13px !important;
+.slider-heder .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0px 13px;
+  text-align: center;
   color: #363838;
-  position: relative;
-  bottom: 95px;
-  left: 110px;
-  width: 8px;
-  height: 8px;
+  opacity: 1;
 }
 
-.swiper-container .swiper-pagination-bullet-active {
+.slider-heder .swiper-pagination-bullet-active {
   background: #ffef35;
 }
 
-.swiper-container .swiper-slide {
+.slider-heder .swiper-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,43 +504,81 @@ header {
           align-items: center;
 }
 
-.swiper-container .swiper-img {
-  position: relative;
-  bottom: 20px;
-  left: 23px;
-}
-
-.swiper-container img {
-  max-height: 740px;
-}
-
-.swiper-container .slider-content {
-  position: relative;
-  bottom: 103px;
-  left: 13px;
-  max-width: 615px;
+.slider-heder .slider-content {
   margin-left: 25px;
 }
 
-.swiper-container .slid-line {
-  width: 185px;
-  height: 1px;
-  background: black;
-  margin: 0 auto;
-}
-
-.swiper-container .slaider-title {
+.slider-heder .slaider-title {
+  position: relative;
   color: #363838;
   font-family: "Montserrat-Bold";
   font-weight: 600;
   font-size: 100px;
   line-height: 1.2;
-  padding-bottom: 35px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 26px;
 }
 
-.swiper-container .slider-text {
+.slider-heder .slaider-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 185px;
+  height: 1px;
+  background: #363838;
+  margin: 0 auto;
+  bottom: -4px;
+}
+
+.slider-heder .slider-text {
+  color: #5a5a5a;
   max-width: 550px;
+  line-height: 1.7;
 }
 
-.webp .swiper-container { background-image: url(../media/background_img/slider-bg.webp); }
+.swiper-pagination {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+}
+
+.new-collection-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.new-collection-article .new-collection-title {
+  position: relative;
+  margin-bottom: 50px;
+  color: #363838;
+  font-family: "Montserrat-Bold";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 51px;
+  text-align: center;
+}
+
+.new-collection-article .new-collection-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 252px;
+  height: 1px;
+  background: #363838;
+  margin: 0 auto;
+  bottom: -25px;
+}
+
+.webp .slider-heder { background-image: url(../media/background_img/slider-bg.webp); }

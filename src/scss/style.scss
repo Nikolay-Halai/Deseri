@@ -1,10 +1,9 @@
 @import "_normalaiz";
 @import "_fonts";
-@import"_global";
+@import "_global";
+@import "_colors";
 
-header {
-    height: 100vh;
-}
+// nav menu
 
 .nav-wrapper {
     display: flex;
@@ -12,98 +11,149 @@ header {
     align-items: center;
     height: 120px;
 
+    .menu-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     nav {
+        
         display: flex;
         justify-content: space-between;
+        align-items: center ;
+        width: 100%;
+        margin-left: 35px;
+        margin-right: 60px;
     }
         
     .menu {
-        display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        align-items: center;
-        padding-top: 20px;
-        width: 100%;
+       display: flex;
+       justify-content: space-between;
     }
+
+    .menu-item-center{
+        padding-right: 80px;
+        padding-left: 80px;
+        
+    }
+
+   
 
     a {
         text-decoration: none;
         color: rgba(54, 56, 56, 0.9);
         font-family: "Montserrat-Bold";
+
     }
 
     .btn-menu {
         border: none;
         background-color: #fff;
+        cursor: pointer;
     }
 }
 
     // slider
 
-.swiper-container {
-    background-image: url(../media/background_img/slider-bg.jpg);
-    padding-bottom: 70px;
+.slider-heder {
+    background-image: url("../media/background_img/slider-bg.jpg");
+    max-height: 710px;
+    margin-bottom: 225px;
     
 
-    .swiper-pagination{
-        bottom: 0;
-    }
-  
-
-    
-    .swiper-pagination-bullet {
-        margin: 0px 13px !important;   
-        color:#363838;
-        position: relative;
-        bottom: 95px;
-        left: 110px;
-        width: 8px;
-        height: 8px;    
+    .swiper-pagination-bullets  .swiper-pagination-bullet {
+        margin: 0px 13px;
+        text-align: center;
+        color: $color-title;
+        opacity: 1;
     }   
     .swiper-pagination-bullet-active {
         background: #ffef35;
     }
-  
-    .swiper-slide{
+
+    .swiper-items {
         display: flex;
         justify-content: center;
         align-items: center;
         }
 
-    .swiper-img {
-        position: relative;
-        bottom: 20px;
-        left: 23px;
-    }
-    img{
-        max-height: 740px;
-        }
-    
-
     .slider-content {
-        position: relative;
-        bottom: 103px;
-        left: 13px;
-        max-width: 615px;
         margin-left: 25px;
-    }
-        .slid-line {
-            width: 185px;
-            height: 1px;
-            background: black;
-            margin: 0 auto;
-            }
-                
+    }        
         .slaider-title {
-            color: #363838;
+            position: relative;
+            color: $color-title;
             font-family: "Montserrat-Bold";
             font-weight: 600;
             font-size: 100px;
             line-height: 1.2;
-            padding-bottom: 35px;
-            margin-bottom: 20px;
-            }       
+            padding-bottom: 20px;
+            margin-bottom: 26px;
+                &::before{
+                    content: ('');
+                    display: block;
+                    position: absolute;
+                    width: 185px;
+                    height: 1px;
+                    background: $color-title;
+                    margin: 0 auto;
+                    bottom: -4px;
+                }
+            }
+            
         .slider-text{
+            color: $color-text;
             max-width: 550px;
+            line-height: 1.7;
         }           
 }
+   
+    
+    .swiper-pagination{
+        align-items: center;
+        bottom: 0;
+    }
+     
+ 
+// section collection
+// .new-collection{
+//     text-align: center;
+// }
+    .new-collection-article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .new-collection-title {
+            position: relative;
+            margin-bottom: 50px;
+            color: #363838;
+            font-family: "Montserrat-Bold";
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 51px;
+            text-align: center;
+                &::before{
+                    content: ('');
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 252px;
+                    height: 1px;
+                    background: $color-title;
+                    margin: 0 auto;
+                    bottom: -25px;
+                    }
+            }
+    
+    
+        .new-collection-text {
+            max-width: 730px;
+            text-align: center;
+            margin: 0;
+
+        }
+
+    }
