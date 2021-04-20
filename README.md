@@ -1,1 +1,1 @@
-Deseri/dist/index.html
+./Deseri/dist/index.html
