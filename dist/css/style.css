@@ -396,6 +396,7 @@ body {
   font-family: "OpenSans";
   font-weight: 400;
   font-size: 16px;
+  line-height: 27px;
 }
 
 .wrapper {
@@ -554,6 +555,9 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .new-collection-article .new-collection-title {
@@ -579,6 +583,19 @@ li {
   background: #363838;
   margin: 0 auto;
   bottom: -25px;
+}
+
+.new-collection-article .new-collection-text {
+  color: #5a5a5a;
+  max-width: 730px;
+  text-align: center;
+  margin-bottom: 0 auto 30px;
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
 }
 
 .webp .slider-heder { background-image: url(../media/background_img/slider-bg.webp); }
