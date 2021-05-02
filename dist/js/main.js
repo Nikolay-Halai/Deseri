@@ -2,7 +2,7 @@
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     pagination: {
-        speed: 1000,
+        autoHeight: true,
         el: '.swiper-pagination',
         clickable: true,
       },
