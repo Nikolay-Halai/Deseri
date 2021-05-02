@@ -75,7 +75,7 @@ function css() {
         )
         .pipe(
             autoprefixer({
-                // grid: true,
+                grid: true,
                 overrideBrowserslist: ["last 2 versions"],
                 cascade: true
                 })
@@ -111,6 +111,7 @@ function js() {
         .pipe(dest(path.build.js)) 
         .pipe(browsersync.stream())
 }
+
 
 function images() {
     return src(path.src.media)

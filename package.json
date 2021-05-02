@@ -21,12 +21,14 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",
+    "gulp-webp": "^4.0.1",
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
+    "jquery": "^3.6.0",
+    "mixitup": "^3.3.1",
     "webp-converter": "^2.2.3"
   },
   "dependencies": {
-    "del": "^6.0.0",
-    "gulp-webp": "^4.0.1"
+    "del": "^6.0.0"
   }
 }
