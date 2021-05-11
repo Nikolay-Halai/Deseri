@@ -1,14 +1,3 @@
-// slider swiper
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    pagination: {
-        autoHeight: true,
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    
-  });
-
   // function for webp work
   function testWebP(callback) {
 
@@ -28,21 +17,42 @@ const swiper = new Swiper('.swiper-container', {
     }
     });
 
-    // mixitUp for gallery
-    var mixer = mixitup('.container-gallery',{
-      load: {
-        filter: '.living'
-      }
-    });
+      // btn menu 
 
-    // btn menu 
-
-    (function (){
-      ('.btn-menu').on('click', function () {
-        ('.rightside-menu').removeClass('rightside-menu-close');
-      });
-     
-      ('.rightside-menu-btn').on('click', function () {
-        ('.rightside-menu').addClass('rightside-menu-close');
-      });
+  (function () {
+    var buttonMenu = document.querySelector('.btn-menu')
+  
+    buttonMenu.addEventListener('click', function () {
+      var menu = document.querySelector('.rightside-menu')
+      menu.classList.remove('rightside-menu-close')
     })
+  
+    var rightsideMenuButton = document.querySelector('.rightside-menu-btn')
+  
+    rightsideMenuButton.addEventListener('click', function () {
+      var menu = document.querySelector('.rightside-menu')
+      menu.classList.add('rightside-menu-close')
+    })
+  })();
+ 
+
+
+// slider swiper
+const swiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    pagination: {
+        autoHeight: true,
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+  });
+
+  // mixitUp for gallery
+  var mixer = mixitup('.container-gallery',{
+    load: {
+      filter: '.living'
+    }
+  });
+
+  
