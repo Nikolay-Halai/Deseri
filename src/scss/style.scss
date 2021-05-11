@@ -855,6 +855,7 @@ footer {
             height: 415px;
             width: 100%;
             display: block;
+            object-fit: cover;
         }
 
         &.video-is-playing {
@@ -919,7 +920,8 @@ footer {
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                background: #9cb9db;
+                background: #6D7278;
+                ;
                 width: 200px;
                 height: 1px;
             }

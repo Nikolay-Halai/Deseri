@@ -1379,6 +1379,8 @@ footer .footer-copyright .footer-copyright-text {
   height: 415px;
   width: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-video #video.video-is-playing #video-over {
@@ -1445,7 +1447,7 @@ footer .footer-copyright .footer-copyright-text {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: #9cb9db;
+  background: #6D7278;
   width: 200px;
   height: 1px;
 }
