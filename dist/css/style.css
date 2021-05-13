@@ -573,6 +573,7 @@ nav .btn-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
 
 .breadcrumbs .breadcrumbs-list li {
@@ -708,7 +709,7 @@ nav .btn-menu {
   color: #5a5a5a;
   max-width: 730px;
   text-align: center;
-  margin-bottom: 0 auto 30px;
+  margin-bottom: 30px;
 }
 
 .new-collection {
@@ -721,7 +722,7 @@ nav .btn-menu {
   -ms-grid-columns: (1fr)[5];
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
-  margin: 30px 30px;
+  margin: 0 30px;
 }
 
 .collection .collection-item {
@@ -768,7 +769,6 @@ nav .btn-menu {
   font-size: 20px;
   line-height: 1.5;
   color: #363838;
-  margin-bottom: 19;
   position: relative;
 }
 
@@ -1109,6 +1109,8 @@ footer .footer-email .envelope {
   width: 16px;
   height: 12px;
   padding-right: 14px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 footer .footer-email path {
@@ -1195,6 +1197,8 @@ footer .footer-social .facebook {
 footer .footer-social .instagram {
   width: 14px;
   height: 15px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 footer .footer-social .pinterest {
@@ -1253,7 +1257,6 @@ footer .footer-copyright .footer-copyright-text {
 
 .about {
   min-height: 400px;
-  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1271,8 +1274,7 @@ footer .footer-copyright .footer-copyright-text {
   color: #363838;
   line-height: 60px;
   font-size: 36px;
-  padding-bottom: 22px;
-  margin-bottom: 22px;
+  margin-bottom: 45px;
   position: relative;
 }
 
@@ -1281,6 +1283,8 @@ footer .footer-copyright .footer-copyright-text {
   position: absolute;
   left: 0;
   bottom: 0;
+  -webkit-transform: translateY(22px);
+          transform: translateY(22px);
   height: 1px;
   width: 200px;
   background-color: #6D7278;
@@ -1437,8 +1441,7 @@ footer .footer-copyright .footer-copyright-text {
   font-size: 36px;
   line-height: 60px;
   color: #363838;
-  padding-bottom: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -1448,6 +1451,8 @@ footer .footer-copyright .footer-copyright-text {
   left: 0;
   bottom: 0;
   background: #6D7278;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
   width: 200px;
   height: 1px;
 }
@@ -1500,13 +1505,17 @@ footer .footer-copyright .footer-copyright-text {
   background: #363838;
 }
 
+.partners {
+  margin-bottom: 55px;
+}
+
 .partners .partner-items {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
-  margin: 0 30px 55px 30px;
+  margin: 0 30px;
 }
 
 .partners .partner-items .partner-item {

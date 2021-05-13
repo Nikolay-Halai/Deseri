@@ -132,6 +132,7 @@ nav {
 
     .breadcrumbs-list {
         display: flex;
+        margin: 0 auto;
 
         li {
             margin-right: 5px;
@@ -251,7 +252,7 @@ nav {
             color: $color-text;
             max-width: 730px;
             text-align: center;
-            margin-bottom: 0 auto 30px;
+            margin-bottom: 30px;
         }
     }
 
@@ -265,7 +266,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 30px;
-    margin: 30px 30px;
+    margin: 0 30px;
    
 
         .collection-item {
@@ -303,7 +304,7 @@ nav {
                 @extend %title;
                 line-height: 1.5;
                 color: $color-title;
-                margin-bottom: 19;
+                // margin-bottom: 19;
                 position: relative;
                  &::after {
                     content: '';
@@ -614,7 +615,8 @@ footer {
         .envelope {
             width: 16px;
             height: 12px;
-            padding-right: 14px;            
+            padding-right: 14px;
+            transform: translateY(2px);            
         }
         path{
             fill: #363838;
@@ -665,6 +667,7 @@ footer {
         .instagram {
             width: 14px;
             height: 15px;
+            transform: translateY(2px);
         }
 
         .pinterest {
@@ -727,7 +730,6 @@ footer {
 // section about-preview
 .about {
     min-height: 400px;
-    height: 100%;
     background-image: url(../media/section-about-preview/about-preview-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -751,14 +753,14 @@ footer {
     color: $color-title;
     line-height: 60px;
     font-size: 36px;
-    padding-bottom: 22px;
-    margin-bottom: 22px;
+    margin-bottom: 45px;
     position: relative;
         &::after {
             content:('');
             position: absolute;
             left: 0;
             bottom: 0;
+            transform: translateY(22px);
             height: 1px;
             width: 200px;
             background-color: #6D7278;
@@ -912,8 +914,7 @@ footer {
         line-height: 60px;
         color: $color-title;
         @extend %title;
-        padding-bottom: 16px;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
         position: relative;
             &::after {
                 content:('');
@@ -921,7 +922,7 @@ footer {
                 left: 0;
                 bottom: 0;
                 background: #6D7278;
-                ;
+                transform: translateY(16px);
                 width: 200px;
                 height: 1px;
             }
@@ -978,12 +979,13 @@ footer {
 // section partners
 
 .partners {
+    margin-bottom: 55px;
 
     .partner-items {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 30px;
-        margin: 0 30px 55px 30px;
+        margin: 0 30px;
     
         .partner-item{
             max-width: 320px;
