@@ -3,7 +3,7 @@
 @import "_vars";
 @import "_global";
 @import "_colors";
-
+@import "_adaptiv";
 // nav menu
 
 
@@ -54,6 +54,10 @@ nav {
         border: none;
         background-color: #fff;
         cursor: pointer;
+    }
+
+    .hamburger {
+        display: none;
     }
 }
 

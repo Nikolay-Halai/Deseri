@@ -34,6 +34,15 @@
       menu.classList.add('rightside-menu-close')
     })
   })();
+
+  // adaptiv menu burger
+
+  $(document).redy(function() {
+    $('.hamburger').click(function(event) {
+      $('.hamburger, nav').toggleClass('active');      
+    });    
+  });
+
  
 // video
 $(function () {
