@@ -1,13 +1,14 @@
 body {
     font-family: "OpenSans";
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.76;
+    font-size: 14px;
+    line-height: 23px;
+    min-width: 300px;
 }
 
 
 .wrapper {
-    max-width: 1140px;
+    max-width: 990px;
     margin: 0 auto;
     padding: 0 15px;
 }

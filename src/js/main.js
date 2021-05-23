@@ -37,14 +37,70 @@
 
   // adaptiv menu burger
 
-  $(document).redy(function() {
+// let hamburger = document.querySelector('.hamburger');
+
+// hamburger.addEventListener('click', function() {
+//   this.classList.toggle('active');
+// });
+
+
+// let navHamburger = document.querySelector('nav');
+
+// navHamburger.addEventListener('click', function() {
+//   this.classList.toggle('active');
+// });
+
+// function toggleClass(className) {
+//   this.classList.toggle(className);  
+// };
+
+// hamburger.addEventListener('click', toggleClass('active'));
+// navHamburger.addEventListener('click', toggleClass('active'));
+
+
+
+
+  $(document).ready(function() {
     $('.hamburger').click(function(event) {
       $('.hamburger, nav').toggleClass('active');      
     });    
   });
 
+
+
  
+
+
+
+
+
+  // mixitUp for gallery
+  var mixer = mixitup('.container-gallery',{
+    load: {
+      filter: '.living'
+    }
+  });
+
+  // slider swiper
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  pagination: {
+      autoHeight: true,
+      el: '.swiper-pagination',
+      clickable: true,
+      slidesPerView: 1,
+    },   
+});
+
+  
 // video
+let playBtn = document.querySelector('.video-control');
+
+playBtn.addEventListener('click', function() {
+  this.classList.toggle('pause');
+});
+
+
 $(function () {
 	var $videoContainer = $('#video'),
 		$videoControls = $('.video-control'),
@@ -62,24 +118,3 @@ $(function () {
 		}
 	});
 });
-
-
-// slider swiper
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    pagination: {
-        autoHeight: true,
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    
-  });
-
-  // mixitUp for gallery
-  var mixer = mixitup('.container-gallery',{
-    load: {
-      filter: '.living'
-    }
-  });
-
-  
