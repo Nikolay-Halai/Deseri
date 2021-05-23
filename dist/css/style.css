@@ -1464,7 +1464,7 @@ footer .footer-copyright .footer-copyright-text {
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 315px;
+  height: 305px;
   z-index: -5;
 }
 
@@ -1472,6 +1472,9 @@ footer .footer-copyright .footer-copyright-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

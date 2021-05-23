@@ -928,13 +928,14 @@ footer {
         background-image: url(../media/page2-inspiration/inspiration-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 315px;
+        height: 305px;
         z-index: -5;
     }
 }
 
 .inspiration-inner {
     display: flex;
+    justify-content: center;
     align-items: center;
 
     .inspiration-image {
