@@ -428,6 +428,15 @@ header {
             grid-column: 1;
             grid-row: 1;
         }
+
+        &.gallery--page {
+            .gallery-items {
+                .gallery-item:nth-child(8) {
+                    grid-column: 1;
+                    grid-row: 1;  
+                }
+            }
+        }    
     }
 
     .blog {

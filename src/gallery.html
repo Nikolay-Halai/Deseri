@@ -20,10 +20,10 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item
-                    "> <a class="menu-item-link menu-item-link--active" href="#">About</a>
+                    "> <a class="menu-item-link" href="./about.html">About</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-item-link" href="./gallery.html">Gallery</a>
+                        <a class="menu-item-link menu-item-link--active" href="./gallery.html">Gallery</a>
                     </li>
                 </ul>
                 <span></span>
@@ -64,170 +64,199 @@
 
         </div>
     </header>
-    <section class="about">
-        <div class="wrapper">
-            <div class="breadcrumbs">
-
-                <ul class="breadcrumbs-list">
+    
+        
+            <div class="breadcrumbs breadcrumbs--pages">
+                <div class="wrapper">
+                <ul class="breadcrumbs-list breadcrumbs-list--pages">
                     <li class="breadcrumbs-item">
                         <a href="./index.html" class="breadcrumbs-link">Home&#47;</a>
                     </li>
                     <li class="breadcrumbs-item">
-                        <p class="breadcrumbs-link">About</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="about-preview">
-                <h2 class="about-preview-title">About Us</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-content">
-        <div class="wrapper">
-            <h3 class="about-title">Balance in the simple through an informed marriage of design, functional and
-                craft</h3>
-            <div class="about-text">
-                <p>Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin coffee
-                    street art. Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa
-                    fanny pack normcore. Lo-fi pop-up banjo portland, echo park hammock chillwave literally
-                    post-ironic ramps subway tile kitsch. Shaman tumblr fixie echo park street art. Enamel pin
-                    vaporware wayfarers, organic succulents hella sustainable cardigan.</p>
-                <p>Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday
-                    carry +1 art party microdosing, put a bird on it brooklyn tilde distillery pork belly
-                    single-origin coffee tumblr quinoa copper mug. Affogato cold-pressed unicorn, viral
-                    intelligentsia leggings raw denim kombucha tote bag messenger bag chambray vape coloring book
-                    scenester. Activated charcoal wayfarers church-key tote bag synth brunch. Retro cornhole</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-video">
-
-        <div id="video">
-            <button class="video-control" id="video-play"></button>
-            <video id="myVideo" preload="auto" poster="./media/video-section-about/prev-video-about.jpg">
-                <source id='mp4' src="./media/video-section-about/video-about.mp4" type='video/mp4' />
-
-            </video>
-        </div>
-
-    </section>
-
-    <section class="inspiration">
-
-        <div class="inspiration-inner">
-            <img class="inspiration-image" src="./media/page2-inspiration/Green_chair.png" alt="green chair">
-
-
-            <div class="inspiration-content">
-                <h3 class="inspiration-title">Our Inspiration in details</h3>
-                <p class="inspiration-text">Semiotics fixie four dollar toast, next level woke scenester direct
-                    trade
-                    photo booth helvetica jean shorts. Fanny pack church-key cornhole, banh mi thundercats gochujang
-                    keytar.</p>
-                <ul class="inspiration-list">
-                    <li class="inspiration-item">
-                        <div class="inspiration-item-content">
-                            <p class="inspiration-item-text">Design and technical drawings</p>
-                            <p class="inspiration-numb">80%</p>
-                        </div>
-                        <progress max="100" value="80">
-                            <span id="value"></span>
-                        </progress>
-                    </li>
-
-                    <li class="inspiration-item">
-                        <div class="inspiration-item-content">
-                            <p class="inspiration-item-text">Measurments</p>
-                            <p class="inspiration-numb">70%</p>
-                        </div>
-                        <progress max="100" value="70">
-                            <span id="value"></span>
-                        </progress>
-                    </li>
-
-                    <li class="inspiration-item">
-                        <div class="inspiration-item-content">
-                            <p class="inspiration-item-text">Furniture functionality analysis</p>
-                            <p class="inspiration-numb">75%</p>
-                        </div>
-                        <progress max="100" value="75">
-                            <span id="value"></span>
-                        </progress>
-                    </li>
-
-                    <li class="inspiration-item">
-                        <div class="inspiration-item-content">
-                            <p class="inspiration-item-text">Interior visualization</p>
-                            <p class="inspiration-numb">40%</p>
-                        </div>
-                        <progress max="100" value="40">
-                            <span id="value"></span>
-                        </progress>
+                        <p class="breadcrumbs-link">Gallery</p>
                     </li>
                 </ul>
             </div>
         </div>
-    </section>
+    
 
-    <section class="partners">
-        <div class="partner-items">
-            <img class="partner-item" src="./media/page2-partners/blush.png" alt="partner logo">
-            <img class="partner-item" src="./media/page2-partners/bahnuk.png" alt="partner logo">
-            <img class="partner-item" src="./media/page2-partners/blush.png" alt="partner logo">
-            <img class="partner-item" src="./media/page2-partners/bahnuk.png" alt="partner logo">
-            <img class="partner-item" src="./media/page2-partners/blush.png" alt="partner logo">
+    <section class="gallery gallery--page">
+        <div class="wrapper-gallery">
+            <div class="gallery-buttons">
+                <button type="button" class="gallery-btn" data-filter=".bedroom">Bedroom furniture</button>
+                <button type="button" class="gallery-btn" data-filter=".living">Living room furniture</button>
+                <button type="button" class="gallery-btn" data-filter=".office">Office furniture</button>
+                <button type="button" class="gallery-btn" data-filter=".dining">Dining room futniture</button>
+                <button type="button" class="gallery-btn" data-filter=".chair">Chair</button>
+            </div>
+            <div class="container-gallery">
+                <div class="gallery-items mix bedroom">
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room5.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/armchair.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/table2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room4.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/green-sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room3.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/yellow-armchair2.jpg" alt="images">
+                    </a>
+                </div>
+
+                <div class="gallery-items mix living">
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room5.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/armchair.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/table2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room4.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/green-sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room3.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/yellow-armchair2.jpg" alt="images">
+                    </a>
+                </div>
+
+                <div class="gallery-items mix office">
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room5.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/armchair.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/table2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room4.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/green-sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room3.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/yellow-armchair2.jpg" alt="images">
+                    </a>
+                </div>
+
+                <div class="gallery-items mix dining">
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room5.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/armchair.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/table2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room4.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/green-sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room3.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/yellow-armchair2.jpg" alt="images">
+                    </a>
+                </div>
+
+                <div class="gallery-items mix chair">
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room5.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/armchair.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/table2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room2.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room4.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/green-sofa.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/room3.jpg" alt="images">
+                    </a>
+                    <a href="#" class="gallery-item">
+                        <img class="gallery-img" src="./media/section-gallery/yellow-armchair2.jpg" alt="images">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section class="collection-about">
-        <div class="collection">
-            <div class="collection-item">
-                <img class="collection-img" src="./media/collection-about/placeholder1.jpg" alt="photo">
-                <a href="#" class="collection-info">
-                    <h3 class="collection-info-title">Truffaut literally trust</h3>
-                    <p class="collection-info-text">Living room furntiture &#5; Chair</p>
-                </a>
-            </div>
-
-            <div class="collection-item">
-                <img class="collection-img" src="./media/collection-about/placeholder2.jpg" alt="photo">
-                <a href="#" class="collection-info">
-                    <h3 class="collection-info-title">Truffaut literally trust</h3>
-                    <p class="collection-info-text">Living room furntiture &#5; Chair</p>
-                </a>
-            </div>
-
-            <div class="collection-item">
-                <img class="collection-img" src="./media/collection-about/placeholder3.jpg" alt="photo">
-                <a href="#" class="collection-info">
-                    <h3 class="collection-info-title">Truffaut literally trust</h3>
-                    <p class="collection-info-text">Living room furntiture &#5; Chair</p>
-                </a>
-            </div>
-
-            <div class="collection-item">
-                <img class="collection-img" src="./media/collection-about/placeholder4.jpg" alt="photo">
-                <a href="#" class="collection-info">
-                    <h3 class="collection-info-title">Truffaut literally trust</h3>
-                    <p class="collection-info-text">Living room furntiture &#5; Chair</p>
-                </a>
-            </div>
-
-            <div class="collection-item">
-                <img class="collection-img" src="./media/collection-about/placeholder5.jpg" alt="photo">
-                <a href="#" class="collection-info">
-                    <h3 class="collection-info-title">Truffaut literally trust</h3>
-                    <p class="collection-info-text">Living room furntiture &#5; Chair</p>
-                </a>
-            </div>
-        </div>
-
-        </div>
-    </section>
-
-
 
 
     <footer class="footer">
@@ -321,6 +350,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/mixitup@3.3.1/dist/mixitup.js"></script>
     <script src="./js/main.min.js"></script>
 </body>
 

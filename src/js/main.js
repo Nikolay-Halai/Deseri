@@ -66,33 +66,13 @@
     });    
   });
 
+    // mixitUp for gallery
+    var mixer = mixitup('.container-gallery',{
+      load: {
+        filter: '.living'
+      }
+    });
 
-
- 
-
-
-
-
-
-  // mixitUp for gallery
-  var mixer = mixitup('.container-gallery',{
-    load: {
-      filter: '.living'
-    }
-  });
-
-  // slider swiper
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  pagination: {
-      autoHeight: true,
-      el: '.swiper-pagination',
-      clickable: true,
-      slidesPerView: 1,
-    },   
-});
-
-  
 // video
 let playBtn = document.querySelector('.video-control');
 
@@ -117,4 +97,28 @@ $(function () {
 			$video.load();
 		}
 	});
+});
+
+ 
+
+
+
+
+
+  // mixitUp for gallery
+  var mixer = mixitup('.container-gallery',{
+    load: {
+      filter: '.living'
+    }
+  });
+
+  // slider swiper
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  pagination: {
+      autoHeight: true,
+      el: '.swiper-pagination',
+      clickable: true,
+      slidesPerView: 1,
+    },   
 });

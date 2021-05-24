@@ -136,10 +136,23 @@ nav {
 
 .breadcrumbs {
     padding: 0 14px;
+    &.breadcrumbs--pages{
+        height: 40px;
+        background: #DFDFDF;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+    
+   
 
     .breadcrumbs-list {
         display: flex;
         margin: 0 auto;
+        &.breadcrumbs-list--pages {
+            padding-top: 7px;
+        }
+            
 
         li {
             margin-right: 5px;
@@ -151,6 +164,7 @@ nav {
         color: $color-text;
         font-family: "OpenSans";
         font-weight: 400;
+        margin: 0;
     }
 }
 
@@ -549,11 +563,33 @@ nav {
         grid-row: span 2;        
     }
 
+// gallery pages
+
+    &.gallery--page {
+        margin-top: 65px;
+        margin-bottom: 100px;
+        .gallery-items{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);  
+            grid-gap: 30px 30px;
+            margin: 0 22px;
+        
+        .gallery-item:nth-child(8) {
+            grid-column: span 2;
+            grid-row: span 2;  
+            }
+    
+        }    
+    }
+
     .gallery-img {
         object-fit: cover;
         width: 100%;      
         height: 100%;
     }
+
+    
+
 }
 
 // section blog
@@ -1058,3 +1094,19 @@ footer {
 .collection-about {
     margin-bottom: 70px;
 }
+
+
+// .gallery-page {
+//     margin-bottom: 67px;
+//     .gallery-items{
+//     grid-template-columns: 16% 1fr 1fr 1fr;
+//     grid-template-rows: 22% 22% 22% 18%;   
+//         grid-gap: 30px 30px;
+//         margin: 0 22px;
+    
+//     .gallery-item:nth-child(8) {
+//         grid-column: span 2;
+//         grid-row: span 2;  
+//         }
+//     }    
+// }
