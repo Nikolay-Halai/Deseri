@@ -17,7 +17,10 @@
     }
     });
 
-      // btn menu 
+
+
+
+ // btn menu 
 
   (function () {
     var buttonMenu = document.querySelector('.btn-menu')
@@ -37,28 +40,6 @@
 
   // adaptiv menu burger
 
-// let hamburger = document.querySelector('.hamburger');
-
-// hamburger.addEventListener('click', function() {
-//   this.classList.toggle('active');
-// });
-
-
-// let navHamburger = document.querySelector('nav');
-
-// navHamburger.addEventListener('click', function() {
-//   this.classList.toggle('active');
-// });
-
-// function toggleClass(className) {
-//   this.classList.toggle(className);  
-// };
-
-// hamburger.addEventListener('click', toggleClass('active'));
-// navHamburger.addEventListener('click', toggleClass('active'));
-
-
-
 
   $(document).ready(function() {
     $('.hamburger').click(function(event) {
@@ -66,59 +47,26 @@
     });    
   });
 
-    // mixitUp for gallery
-    var mixer = mixitup('.container-gallery',{
-      load: {
-        filter: '.living'
-      }
-    });
-
-// video
-let playBtn = document.querySelector('.video-control');
-
-playBtn.addEventListener('click', function() {
-  this.classList.toggle('pause');
-});
-
-
-$(function () {
-	var $videoContainer = $('#video'),
-		$videoControls = $('.video-control'),
-		$video = $('#myVideo')[0];
-
-	$videoControls.click(function () {
-		if ($video.paused) {
-			$video.play();
-			$videoContainer.addClass('video-is-playing');
-		} else {
-			$video.pause();
-			$videoContainer.removeClass('video-is-playing');
-			//	возвращаем постер
-			$video.load();
-		}
-	});
-});
-
- 
-
-
-
-
-
   // mixitUp for gallery
-  var mixer = mixitup('.container-gallery',{
+  
+   var mixer = mixitup('.container-gallery',{
     load: {
       filter: '.living'
     }
   });
 
-  // slider swiper
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  pagination: {
-      autoHeight: true,
-      el: '.swiper-pagination',
-      clickable: true,
-      slidesPerView: 1,
-    },   
-});
+
+     // slider swiper
+
+  var swiper1 = new Swiper('.swiper1', {
+    // Optional parameters
+    slidesPerView: 1,
+    autoHeight: true,
+    loop: true,
+    freeMode: true,
+    pagination: {        
+        el: '.swiper-pagination',
+        clickable: true,
+        
+      },   
+  });
